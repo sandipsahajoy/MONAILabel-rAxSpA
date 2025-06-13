@@ -40,8 +40,8 @@ class MyApp(MONAILabelApp):
             app_dir=app_dir,
             studies=studies,
             conf=conf,
-            name=f"MONAILabel - MRSegmentator",
-            description="Deep learning based segmentation of abdominal MRI images",
+            name=f"MONAILabel - X-raySegmentator",
+            description="Deep learning based segmentation of Spinal Column X-ray images",
             version=monailabel.__version__,
         )
         

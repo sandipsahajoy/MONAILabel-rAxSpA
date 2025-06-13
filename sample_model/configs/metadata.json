@@ -14,14 +14,14 @@
   },
   "task": "Organ Segmentation on MR images",
   "description": "Clone of Totalsegmentator Mini for MR segmentation",
-  "authors": "Hartmut Häntze",
-  "copyright": "Copyright (c) Hartmut Häntze",
+  "authors": "Sandip Saha Joy",
+  "copyright": "Copyright (c) Sandip Saha Joy",
   "network_data_format": {
     "inputs": {
       "image": {
         "type": "image",
         "format": "Density",
-        "modality": "MR",
+        "modality": "X-ray",
         "num_channels": 1,
         "spatial_shape": [
           64,
@@ -57,9 +57,35 @@
         "is_patch_data": true,
         "channel_def": {
             "0": "background",
-            "1": "only model",
-	    "2": "only annotation",
-	    "3": "both"
+            "1": "C1",
+            "2": "C2",
+            "3": "C3",
+            "4": "C4",
+            "5": "C5",
+            "6": "C6",
+            "7": "C7",
+            "8": "Th1",
+            "9": "Th2",
+            "10": "Th3",
+            "11": "Th4",
+            "12": "Th5",
+            "13": "Th6",
+            "14": "Th7",
+            "15": "Th8",
+            "16": "Th9",
+            "17": "Th10",
+            "18": "Th11",
+            "19": "Th12",
+            "20": "L1",
+            "21": "L2",
+            "22": "L3",
+            "23": "L4",
+            "24": "L5",
+            "25": "S1",
+            "26": "S2",
+            "27": "S3",
+            "28": "S4",
+            "29": "S5"
         }
       }
     }
