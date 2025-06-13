@@ -1,0 +1,16 @@
+services:
+ monailabel-server:
+   image: projectmonai/monailabel
+   container_name: AZ_mri_NAKO_revision
+   #stdin_open: true
+   #tty: true
+   command: monailabel start_server --app /apps/monaibundle/ --studies /data/ --conf models /model --verbose DEBUG
+   ports:
+     - 8008:8000
+   restart: unless-stopped
+   volumes:
+     - /home/andrei/Desktop/monailabel_server/apps:/apps
+     - /home/andrei/Desktop/monailabel_server/data:/data
+     - /home/andrei/Desktop/monailabel_server/sample_model:/model
+   environment:
+     - MONAI_ZOO_SOURCE=local 
